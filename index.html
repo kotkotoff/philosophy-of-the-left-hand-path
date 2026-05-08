@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -10,6 +10,8 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://philosophy-of-the-left-hand-path.denys-spirin.workers.dev/">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=20260508">
 <meta property="og:title" content="Philosophy of the Left-Hand Path — Denys Spirin">
 <meta property="og:description" content="A philosophical tetralogy on sovereignty, acausality, ethics, and the history of philosophy read from the Left-Hand Path.">
 <meta property="og:type" content="website">
@@ -111,497 +113,21 @@
   ]
 }
 </script>
-<style>
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 17px;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  background-color: #0c0c0c;
-  color: #b8b8b8;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  line-height: 1.75;
-  padding: 0 1.5rem;
-}
-
-.wrap {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 5.5rem 1.5rem 6rem;
-}
-
-/* ---- HEADER ---- */
-
-header {
-  margin-bottom: 3rem;
-  padding-bottom: 2.4rem;
-  border-bottom: 1px solid #1a1a1a;
-}
-
-.author-label {
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  color: #525252;
-  margin-bottom: 0.75rem;
-}
-
-header h1 {
-  font-size: 2rem;
-  font-weight: normal;
-  color: #e0e0e0;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.01em;
-  line-height: 1.2;
-}
-
-.series-subtitle {
-  font-size: 0.88rem;
-  color: #484848;
-  margin-bottom: 1.6rem;
-}
-
-.series-description {
-  font-size: 0.97rem;
-  color: #9c9c9c;
-  max-width: 640px;
-  line-height: 1.82;
-}
-
-.profile-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 1rem;
-  margin-top: 1.6rem;
-}
-
-.profile-links a {
-  font-size: 0.84rem;
-  color: #787878;
-  text-decoration: none;
-  border-bottom: 1px solid #252525;
-  padding-bottom: 1px;
-  transition: color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
-}
-
-.profile-links a:hover {
-  color: #e3e3e3;
-  border-color: #6f6f6f;
-  transform: translateY(-1px);
-}
-
-a:focus-visible,
-summary:focus-visible {
-  outline: 2px solid #8f8f8f;
-  outline-offset: 4px;
-}
-
-header h1 {
-  transition: color 0.18s ease, transform 0.18s ease;
-}
-
-header:hover h1 {
-  color: #f7f7f7;
-  transform: translateY(-1px);
-}
-
-.series-subtitle {
-  transition: color 0.18s ease;
-}
-
-header:hover .series-subtitle {
-  color: #bdbdbd;
-}
-
-/* ---- BOOKS ---- */
-
-.books {
-  display: flex;
-  flex-direction: column;
-}
-
-.book {
-  position: relative;
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  column-gap: 2.8rem;
-  padding: 1.5rem 1.5rem;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #181818;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.01);
-  transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-  will-change: transform;
-  content-visibility: auto;
-  contain-intrinsic-size: 420px;
-}
-
-.book:hover {
-  transform: translateY(-3px);
-  background-color: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
-}
-
-.book:hover .book-title {
-  color: #f2f2f2;
-}
-
-.book:hover .book-abstract {
-  color: #c0c0c0;
-}
-
-.book:last-child {
-  border-bottom: none;
-}
-
-.book-cover {
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.65rem;
-}
-
-.book-cover img {
-  width: 100%;
-  height: auto;
-  display: block;
-  aspect-ratio: 1410 / 2250;
-  object-fit: cover;
-  background: #151515;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.65);
-}
-
-.cover-buttons {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.85rem;
-  justify-content: center;
-}
-
-.btn-outline {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #686868;
-  text-decoration: none;
-  border: 1px solid #2c2c2c;
-  padding: 0.32rem 0.75rem;
-  border-radius: 0.3rem;
-  transition: color 0.20s ease, border-color 0.20s ease, transform 0.20s ease, background-color 0.20s ease, box-shadow 0.20s ease;
-  display: inline-block;
-  text-align: center;
-}
-
-.btn-outline:hover {
-  color: #f5f5f5;
-  border-color: #6c6c6c;
-  background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.09);
-  transform: translateY(-1px);
-}
-
-.book-num,
-.book-year {
-  transition: color 0.20s ease;
-}
-
-.book:hover .book-num,
-.book:hover .book-year {
-  color: #9f9f9f;
-}
-
-.book-title {
-  transition: color 0.18s ease;
-}
-
-.reveal {
-  transition: opacity 0.55s ease, transform 0.55s ease;
-}
-
-body.js-enabled .reveal {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-body.js-enabled .reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.book-num {
-  font-size: 0.67rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #363636;
-  margin-bottom: 0.65rem;
-}
-
-.book-title {
-  font-size: 1.28rem;
-  font-weight: normal;
-  color: #d4d4d4;
-  line-height: 1.35;
-  margin-bottom: 1.2rem;
-}
-
-.book-abstract {
-  font-size: 0.91rem;
-  color: #909090;
-  line-height: 1.8;
-  margin-bottom: 1.9rem;
-}
-
-/* ---- LINKS ---- */
-
-.book-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.extra-links {
-  margin-top: 0.1rem;
-}
-
-.extra-links summary {
-  width: fit-content;
-  cursor: pointer;
-  list-style-position: outside;
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  color: #686868;
-  border-bottom: 1px solid #2a2a2a;
-  padding-bottom: 2px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.extra-links summary:hover,
-.extra-links[open] summary {
-  color: #a8a8a8;
-  border-color: #545454;
-}
-
-.extra-links .link-row {
-  margin-top: 0.55rem;
-  gap: 0.28rem 0.72rem;
-}
-
-.extra-links .link-row a {
-  font-size: 0.76rem;
-  color: #666666;
-}
-
-.home-card {
-  margin: 2rem 0 0;
-  padding: 1.5rem 1.5rem;
-  border: 1px solid #242424;
-  border-radius: 1rem;
-  background: rgba(255,255,255,0.02);
-  color: #c9c9c9;
-  display: block;
-  text-decoration: none;
-  transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.home-card:hover {
-  transform: translateY(-3px);
-  background-color: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
-}
-
-.home-card .card-head {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.8rem;
-  align-items: center;
-  margin-bottom: 1.25rem;
-}
-
-.home-card .card-head:last-child {
-  margin-bottom: 0;
-}
-
-.home-card .more-label {
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #7a7a7a;
-  transition: color 0.18s ease;
-}
-
-.home-card:hover .more-label {
-  color: #ffffff;
-}
-
-.home-card .card-link {
-  font-size: 0.85rem;
-  color: #c9c9c9;
-  text-decoration: none;
-  border-bottom: 1px solid #2d2d2d;
-  padding-bottom: 1px;
-  transition: color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
-}
-
-.home-card .card-link:hover {
-  color: #ffffff;
-  border-color: #6e6e6e;
-  transform: translateY(-1px);
-}
-
-.download-all-card .cover-buttons {
-  justify-content: flex-start;
-  margin-top: 0;
-}
-
-.mini-books {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.mini-book {
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
-  padding: 0.9rem 1rem;
-  border-radius: 0.85rem;
-  background: rgba(255,255,255,0.02);
-  color: #d1d1d1;
-  cursor: pointer;
-  transition: background-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.mini-book:hover {
-  background: rgba(255,255,255,0.06);
-  transform: translateY(-1px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.14);
-}
-
-.mini-book img {
-  width: 64px;
-  height: 92px;
-  object-fit: cover;
-  border-radius: 0.65rem;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
-}
-
-.mini-book span {
-  font-size: 0.9rem;
-  color: #e3e3e3;
-  line-height: 1.3;
-}
-
-.link-label {
-  font-size: 0.63rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #363636;
-  margin-bottom: 0.5rem;
-}
-
-.link-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 1rem;
-}
-
-.link-row a {
-  font-size: 0.84rem;
-  color: #787878;
-  text-decoration: none;
-  border-bottom: 1px solid #252525;
-  padding-bottom: 1px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.link-row a:hover {
-  color: #c4c4c4;
-  border-color: #505050;
-}
-
-/* ---- FOOTER ---- */
-
-footer {
-  margin-top: 5.5rem;
-  padding-top: 2rem;
-  border-top: 1px solid #1a1a1a;
-  font-size: 0.84rem;
-  color: #525252;
-}
-
-footer a {
-  color: #6e6e6e;
-  text-decoration: none;
-  border-bottom: 1px solid #252525;
-  padding-bottom: 1px;
-  transition: color 0.15s ease;
-}
-
-footer a:hover {
-  color: #b0b0b0;
-}
-
-/* ---- RESPONSIVE ---- */
-
-@media (max-width: 580px) {
-  html {
-    font-size: 16px;
-  }
-
-  .wrap {
-    padding: 3.5rem 1rem 4.5rem;
-  }
-
-  header {
-    margin-bottom: 3.5rem;
-  }
-
-  .book {
-    grid-template-columns: 1fr;
-    row-gap: 1.6rem;
-    padding: 3.5rem 0;
-  }
-
-  .mini-books {
-    grid-template-columns: 1fr;
-  }
-
-  .book-cover img {
-    width: 155px;
-    max-width: 155px;
-  }
-
-  header h1 {
-    font-size: 1.65rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation: none !important;
-    scroll-behavior: auto !important;
-    transition: none !important;
-  }
-}
-
-</style>
 </head>
-<body>
+<body class="home-page">
 <div class="wrap">
 
+  <nav class="site-nav" aria-label="Primary">
+    <a class="brand-link" href="index.html">Denys Spirin</a>
+    <div class="nav-links">
+      <a href="index.html" aria-current="page">Books</a>
+      <a href="terms.html">Glossary</a>
+      <a href="other-books.html">Other books</a>
+      <a href="#download-all">Download all</a>
+    </div>
+  </nav>
+
   <header>
-    <p class="author-label">Denys Spirin</p>
     <h1>Philosophy of the Left-Hand Path</h1>
     <p class="series-subtitle">A philosophical tetralogy</p>
     <p class="series-description">The series treats the Left-Hand Path as a coherent philosophical position — a set of real claims about the self, power, and how reality is structured. Four books, moving from foundational ontology through acausality, ethics, and the history of philosophy read through an LHP lens. Cumulative but each volume stands on its own.</p>
@@ -809,39 +335,29 @@ footer a:hover {
 
   </main>
 
-  <a href="terms.html" class="home-card terms-card reveal">
-    <div class="card-head">
-      <p class="more-label">Glossary of Terms</p>
-    </div>
-  </a>
+  <section class="home-tabs reveal" aria-label="More options">
+    <a href="terms.html" class="home-card terms-card">
+      <div class="card-head">
+        <p class="more-label">Glossary of Terms</p>
+      </div>
+    </a>
 
-  <section class="home-card download-all-card reveal">
-    <div class="card-head">
-      <p class="more-label">Download all books</p>
-    </div>
-    <div class="archive-links">
-      <div class="cover-buttons">
+    <section class="home-card expand-card download-all-card" id="download-all" tabindex="0">
+      <div class="card-head">
+        <p class="more-label">Download all books</p>
+      </div>
+      <div class="expand-content archive-links">
         <a class="btn-outline" href="left-hand-path-pdf.zip" download>PDF Archive</a>
         <a class="btn-outline" href="left-hand-path-epub.zip" download>EPUB Archive</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <a href="other-books.html" class="home-card more-books-card reveal">
-    <div class="card-head">
-      <p class="more-label">Other books</p>
-    </div>
-    <div class="mini-books">
-      <div class="mini-book">
-        <img src="Other/Treatise%20on%20ontology.png" alt="Treatise on Ontology" width="1080" height="1920" loading="lazy" decoding="async">
-        <span>Treatise on Ontology</span>
+    <a href="other-books.html" class="home-card more-books-card">
+      <div class="card-head">
+        <p class="more-label">Other books</p>
       </div>
-      <div class="mini-book">
-        <img src="Other/Ontology-of-Differentiation-Being-Consciousness-and-the-Game.png" alt="Ontology of Differentiation" width="1410" height="2250" loading="lazy" decoding="async">
-        <span>Ontology of Differentiation</span>
-      </div>
-    </div>
-  </a>
+    </a>
+  </section>
 
   <footer>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d90965c1321948de8cd47d9a039782c3"}'></script><!-- End Cloudflare Web Analytics -->
