@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
   var extraLinks = document.querySelectorAll('.extra-links');
 
   extraLinks.forEach(function(details) {
+    if (details.hasAttribute('data-default-open')) {
+      details.classList.add('hover-open');
+      return;
+    }
+
     var hoverOpenTimer = null;
     var hoverCloseTimer = null;
     var openDelay = 180;
