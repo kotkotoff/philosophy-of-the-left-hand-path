@@ -437,6 +437,31 @@ body.js-enabled .reveal.visible {
   text-align: center;
 }
 
+.page-back {
+  margin-top: 1.4rem;
+}
+
+.page-back a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.15rem;
+  padding: 0 0.8rem;
+  border: 1px solid #242424;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.014);
+  color: #777777;
+  text-decoration: none;
+  font-size: 0.82rem;
+  transition: color 0.18s ease, border-color 0.18s ease, background-color 0.18s ease, transform 0.18s ease;
+}
+
+.page-back a:hover {
+  color: #d6d6d6;
+  border-color: #4a4a4a;
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-1px);
+}
+
 .book-abstract {
   font-size: 0.91rem;
   color: #909090;
