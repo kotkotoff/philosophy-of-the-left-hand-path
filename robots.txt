@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://philosophy-of-the-left-hand-path.denys-spirin.workers.dev/sitemap.xml
