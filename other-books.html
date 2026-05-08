@@ -22,6 +22,7 @@
 <meta name="twitter:title" content="Other Books — Denys Spirin">
 <meta name="twitter:description" content="Treatise on Ontology and Ontology of Differentiation: Being, Consciousness, and the Game — by Denys Spirin.">
 <meta name="twitter:image" content="https://philosophy-of-the-left-hand-path.denys-spirin.workers.dev/Other/Ontology-of-Differentiation-Being-Consciousness-and-the-Game.png">
+<link rel="preload" as="image" href="Other/Treatise%20on%20ontology.png" fetchpriority="high">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -184,6 +185,8 @@ header:hover .series-subtitle {
   background: rgba(255, 255, 255, 0.01);
   transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   will-change: transform;
+  content-visibility: auto;
+  contain-intrinsic-size: 420px;
 }
 
 .book:hover {
@@ -213,7 +216,11 @@ header:hover .series-subtitle {
 
 .book-cover img {
   width: 100%;
+  height: auto;
   display: block;
+  aspect-ratio: 1410 / 2250;
+  object-fit: cover;
+  background: #151515;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.65);
 }
 
@@ -258,13 +265,7 @@ header:hover .series-subtitle {
 }
 
 .book-title {
-  transition: color 0.18s ease, text-decoration-color 0.18s ease;
-}
-
-.book-title:hover {
-  color: #ffffff;
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.18);
+  transition: color 0.18s ease;
 }
 
 .reveal {
@@ -517,6 +518,7 @@ footer a:hover {
   }
 
   .book-cover img {
+    width: 155px;
     max-width: 155px;
   }
 
@@ -559,7 +561,7 @@ footer a:hover {
 
     <article class="book" id="treatise-on-ontology">
       <div class="book-cover">
-        <img src="Other/Treatise%20on%20ontology.png" alt="Treatise on Ontology — cover">
+        <img src="Other/Treatise%20on%20ontology.png" alt="Treatise on Ontology — cover" width="1080" height="1920" decoding="async" fetchpriority="high">
         <div class="cover-buttons">
           <a class="btn-outline" href="Other/treatise-on-ontology.epub" download>EPUB</a>
         </div>
@@ -603,7 +605,7 @@ footer a:hover {
 
     <article class="book" id="ontology-of-differentiation">
       <div class="book-cover">
-        <img src="Other/Ontology-of-Differentiation-Being-Consciousness-and-the-Game.png" alt="Ontology of Differentiation — cover">
+        <img src="Other/Ontology-of-Differentiation-Being-Consciousness-and-the-Game.png" alt="Ontology of Differentiation — cover" width="1410" height="2250" loading="lazy" decoding="async">
         <div class="cover-buttons">
           <a class="btn-outline" href="Other/ontology-of-differentiation-being-consciousness-and-the-game.epub" download>EPUB</a>
         </div>
