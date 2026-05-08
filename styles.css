@@ -237,6 +237,10 @@ header:hover .series-subtitle {
   border-radius: 0.65rem;
 }
 
+.book-cover picture {
+  display: block;
+}
+
 .book-cover img {
   width: 100%;
   height: auto;
