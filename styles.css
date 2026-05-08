@@ -347,6 +347,37 @@ body.js-enabled .reveal.visible {
   content-visibility: visible;
 }
 
+.book-page .books {
+  display: block;
+}
+
+.book-page .book {
+  grid-template-columns: minmax(210px, 260px) minmax(0, 1fr);
+  column-gap: 3.4rem;
+  padding: 2.4rem;
+  border: 1px solid #242424;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.022);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.book-page .book:hover {
+  transform: none;
+}
+
+.book-page .book-cover {
+  align-self: start;
+}
+
+.book-page .book-title {
+  font-size: 1.52rem;
+}
+
+.book-page .book-abstract {
+  font-size: 0.97rem;
+  max-width: 680px;
+}
+
 .book-abstract {
   font-size: 0.91rem;
   color: #909090;
@@ -666,6 +697,16 @@ footer a:hover {
     grid-template-columns: 1fr;
     row-gap: 1.6rem;
     padding: 3.5rem 0;
+  }
+
+  .book-page .book {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 0;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
   .home-tabs {
