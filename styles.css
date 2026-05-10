@@ -346,14 +346,7 @@ body.js-enabled .reveal.visible {
   transform: translateY(0);
 }
 
-.book-num {
-  font-size: 0.67rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #363636;
-  margin-bottom: 0.65rem;
-}
-
+.book-num,
 .book-year {
   font-size: 0.67rem;
   letter-spacing: 0.2em;
@@ -734,9 +727,6 @@ footer a:hover {
   color: #e0e0e0;
   line-height: 1.25;
   font-weight: normal;
-}
-
-.terms-page h2 {
   margin: 2.6rem 0 1.2rem;
   border-bottom: 1px solid #1a1a1a;
   padding-bottom: 0.65rem;
