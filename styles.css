@@ -504,6 +504,10 @@ body.js-enabled.book-page .book-single.reveal {
   gap: 0.75rem;
 }
 
+.book-cover .book-links {
+  margin-top: 1.2rem;
+}
+
 .extra-links {
   margin-top: 0.1rem;
 }
