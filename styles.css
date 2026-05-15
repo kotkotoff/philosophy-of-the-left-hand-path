@@ -295,6 +295,11 @@ header:hover .series-subtitle {
 
 .book-num,
 .book-year {
+  font-size: 0.67rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #363636;
+  margin-bottom: 0.65rem;
   transition: color 0.20s ease;
 }
 
@@ -319,15 +324,6 @@ body.js-enabled .reveal {
 body.js-enabled .reveal.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-.book-num,
-.book-year {
-  font-size: 0.67rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #363636;
-  margin-bottom: 0.65rem;
 }
 
 .book-title {
