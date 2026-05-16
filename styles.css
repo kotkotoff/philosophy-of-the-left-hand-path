@@ -49,17 +49,27 @@ body {
   transform: translateY(-1px);
 }
 
+.nav-identity {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 0.65rem;
+}
+
+.nav-divider {
+  flex: 0 0 auto;
+  width: 1px;
+  height: 1.2rem;
+  background: #252525;
+}
+
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.35rem;
-  width: fit-content;
-  margin-bottom: 1.2rem;
-  padding: 0.45rem 0.6rem;
-  border: 1px solid #202020;
-  border-radius: 0.55rem;
-  background: rgba(255, 255, 255, 0.014);
+  min-width: 0;
   font-size: 0.82rem;
   color: #7a7a7a;
 }
@@ -80,6 +90,13 @@ body {
   margin: 0;
 }
 
+.breadcrumbs span:last-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .breadcrumbs span[aria-hidden="true"] {
   color: #3d3d3d;
 }
@@ -97,6 +114,7 @@ body {
 }
 
 .nav-links {
+  flex: 0 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -129,9 +147,8 @@ body {
 /* ---- HEADER ---- */
 
 header {
-  margin-bottom: 3rem;
-  padding-bottom: 2.4rem;
-  border-bottom: 1px solid #1a1a1a;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.95rem;
 }
 
 header h1 {
@@ -147,6 +164,7 @@ header h1 {
   font-size: 0.88rem;
   color: #484848;
   margin-bottom: 1.6rem;
+  transition: color 0.18s ease;
 }
 
 .series-description {
@@ -194,12 +212,16 @@ header:hover h1 {
   transform: translateY(-1px);
 }
 
-.series-subtitle {
-  transition: color 0.18s ease;
-}
-
 header:hover .series-subtitle {
   color: #bdbdbd;
+}
+
+.book-page .site-nav {
+  margin-bottom: 1.5rem;
+}
+
+.book-page header {
+  display: none;
 }
 
 /* ---- BOOKS ---- */
@@ -309,6 +331,11 @@ header:hover .series-subtitle {
 }
 
 .book-title {
+  font-size: 1.28rem;
+  font-weight: normal;
+  color: #d4d4d4;
+  line-height: 1.35;
+  margin-bottom: 1.2rem;
   transition: color 0.18s ease;
 }
 
@@ -324,14 +351,6 @@ body.js-enabled .reveal {
 body.js-enabled .reveal.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-.book-title {
-  font-size: 1.28rem;
-  font-weight: normal;
-  color: #d4d4d4;
-  line-height: 1.35;
-  margin-bottom: 1.2rem;
 }
 
 .book-title a,
@@ -405,6 +424,14 @@ body.js-enabled.book-page .book-single.reveal {
   transition: transform 0.22s ease, background-color 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
 }
 
+.book-nav-link:first-child:nth-last-child(2) {
+  grid-column: 3;
+}
+
+.book-nav-link:first-child {
+  text-align: right;
+}
+
 .book-nav-link:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.05);
@@ -428,36 +455,8 @@ body.js-enabled.book-page .book-single.reveal {
 }
 
 .book-nav-all {
+  grid-column: 2;
   text-align: center;
-}
-
-.page-back {
-  margin-top: 1.4rem;
-}
-
-.page-back a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.1rem;
-  padding: 0 0.9rem;
-  border: 1px solid #2c2c2c;
-  border-radius: 0.3rem;
-  background: transparent;
-  color: #686868;
-  text-decoration: none;
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  transition: color 0.20s ease, border-color 0.20s ease, background-color 0.20s ease, transform 0.20s ease, box-shadow 0.20s ease;
-}
-
-.page-back a:hover {
-  color: #f5f5f5;
-  border-color: #6c6c6c;
-  background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.09);
-  transform: translateY(-1px);
 }
 
 .book-abstract {
@@ -601,8 +600,13 @@ body.js-enabled.book-page .book-single.reveal {
 }
 
 .terms-card,
-.more-books-card {
+.more-books-card,
+.back-card {
   justify-content: center;
+}
+
+.back-card {
+  min-height: 4.5rem;
 }
 
 .expand-card {
@@ -808,6 +812,14 @@ footer a:hover {
     padding: 0.85rem;
   }
 
+  .nav-identity {
+    flex-wrap: wrap;
+  }
+
+  .breadcrumbs span:last-child {
+    white-space: normal;
+  }
+
   .nav-links {
     justify-content: flex-start;
     width: 100%;
@@ -819,7 +831,7 @@ footer a:hover {
   }
 
   header {
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.4rem;
   }
 
   .book {
@@ -842,6 +854,12 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 
+  .book-nav-link:first-child:nth-last-child(2),
+  .book-nav-all {
+    grid-column: auto;
+  }
+
+  .book-nav-link:first-child,
   .book-nav-all {
     text-align: left;
   }
