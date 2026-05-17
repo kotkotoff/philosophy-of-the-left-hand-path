@@ -592,7 +592,7 @@ body.js-enabled.book-page .book-single.reveal {
 
 .home-tabs {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.85rem;
   min-height: 8.6rem;
   margin-top: 2rem;
@@ -815,6 +815,115 @@ footer a:hover {
   margin-bottom: 0;
 }
 
+/* ---- RELATED LINKS ---- */
+
+.related-content {
+  display: grid;
+  gap: 1rem;
+  max-width: 860px;
+}
+
+.related-page .back-card {
+  max-width: 860px;
+}
+
+.related-page header {
+  margin-bottom: 1.8rem;
+}
+
+.related-page .series-description + .series-description {
+  margin-top: 0.75rem;
+}
+
+.related-page .series-subtitle {
+  margin-bottom: 1.05rem;
+}
+
+.related-section {
+  border: 1px solid #242424;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.014);
+  padding: 1.2rem 1.25rem;
+  transition: background-color 0.20s ease, border-color 0.20s ease, transform 0.20s ease, box-shadow 0.20s ease;
+}
+
+.related-section:hover {
+  background: rgba(255, 255, 255, 0.032);
+  border-color: rgba(255, 255, 255, 0.095);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.20);
+  transform: translateY(-1px);
+}
+
+.related-section p {
+  color: #929292;
+  font-size: 0.92rem;
+  line-height: 1.68;
+}
+
+.related-section p + p {
+  margin-top: 0.72rem;
+}
+
+.related-section h2 {
+  color: #e0e0e0;
+  line-height: 1.25;
+  font-weight: normal;
+  margin: 0 0 0.85rem;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 0.55rem;
+  font-size: 1.12rem;
+}
+
+.related-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 0.75rem 1.1rem;
+}
+
+.related-item {
+  min-width: 0;
+  padding: 0.15rem 0 0;
+}
+
+.related-section:has(.related-item:only-child) .related-list {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.related-item h3 {
+  margin-bottom: 0.22rem;
+  font-size: 0.98rem;
+  font-weight: normal;
+  line-height: 1.35;
+}
+
+.related-item h3 a {
+  color: #d8d8d8;
+  text-decoration: none;
+  border-bottom: 1px solid #303030;
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.related-item h3 a:hover {
+  color: #f2f2f2;
+  border-color: #686868;
+}
+
+.related-reviewed {
+  color: #626262;
+  font-size: 0.82rem;
+}
+
+.related-closing {
+  background: transparent;
+  box-shadow: none;
+}
+
+.related-closing:hover {
+  background: rgba(255, 255, 255, 0.018);
+  box-shadow: none;
+}
+
 /* ---- RESPONSIVE ---- */
 
 @media (max-width: 580px) {
@@ -929,6 +1038,14 @@ footer a:hover {
 
   .term {
     padding: 1.1rem 1rem;
+  }
+
+  .related-section {
+    padding: 1.1rem 1rem;
+  }
+
+  .related-list {
+    grid-template-columns: 1fr;
   }
 }
 
