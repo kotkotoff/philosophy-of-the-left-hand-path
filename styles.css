@@ -1022,6 +1022,12 @@ footer a:hover {
     justify-content: flex-start;
   }
 
+  .book-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .book-cover img {
     width: 155px;
     max-width: 155px;
