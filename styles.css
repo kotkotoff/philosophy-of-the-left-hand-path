@@ -592,7 +592,7 @@ body.js-enabled.book-page .book-single.reveal {
 
 .home-tabs {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0.85rem;
   min-height: 8.6rem;
   margin-top: 2rem;
@@ -624,6 +624,7 @@ body.js-enabled.book-page .book-single.reveal {
 .terms-card,
 .more-books-card,
 .articles-card,
+.essays-card,
 .back-card {
   justify-content: center;
 }
