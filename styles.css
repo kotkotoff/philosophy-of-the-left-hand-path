@@ -618,6 +618,7 @@ body.js-enabled.book-page .book-single.reveal {
   height: 2.8rem;
   margin-top: 0;
   padding: 0.7rem 0.8rem;
+  border-radius: 0.7rem;
   text-align: left;
 }
 
@@ -705,6 +706,9 @@ a.expand-card {
 .download-all-card .btn-outline {
   flex: 1 1 100%;
   min-width: 0;
+  padding: 0.26rem 0.55rem;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
   white-space: nowrap;
 }
 
