@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "philosophy-of-the-left-hand-path",
-  "compatibility_date": "2026-05-19",
+  "compatibility_date": "2026-05-25",
   "observability": {
     "enabled": true
   },
