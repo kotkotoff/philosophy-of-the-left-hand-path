@@ -27,10 +27,9 @@ body {
 
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.25rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
   margin-bottom: 3rem;
   padding: 0.75rem;
   border: 1px solid #202020;
@@ -51,7 +50,7 @@ body {
 }
 
 .nav-identity {
-  flex: 1 1 14rem;
+  width: 100%;
   display: flex;
   align-items: center;
   min-width: 0;
@@ -115,10 +114,10 @@ body {
 }
 
 .nav-links {
-  flex: 1 1 34rem;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   gap: 0.4rem;
   min-width: 0;
 }
@@ -1142,6 +1141,7 @@ footer a:hover {
   }
 
   .nav-links {
+    flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
   }
