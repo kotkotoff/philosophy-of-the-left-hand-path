@@ -27,9 +27,9 @@ body {
 
 .site-nav {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
   margin-bottom: 3rem;
   padding: 0.75rem;
   border: 1px solid #202020;
@@ -50,7 +50,7 @@ body {
 }
 
 .nav-identity {
-  width: 100%;
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
   min-width: 0;
@@ -114,12 +114,11 @@ body {
 }
 
 .nav-links {
-  width: 100%;
+  flex: 0 0 auto;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 0.4rem;
-  min-width: 0;
 }
 
 .nav-links a {
@@ -171,7 +170,7 @@ header h1 {
 .series-description {
   font-size: 0.97rem;
   color: #9c9c9c;
-  max-width: 640px;
+  max-width: none;
   line-height: 1.82;
 }
 
@@ -1023,7 +1022,8 @@ footer a:hover {
 
 .blog-entry-expandable summary {
   display: block;
-  padding: 1.25rem 1.35rem;
+  position: relative;
+  padding: 1.25rem 6.4rem 1.25rem 1.35rem;
   cursor: pointer;
   list-style: none;
 }
@@ -1033,26 +1033,42 @@ footer a:hover {
 }
 
 .blog-entry-expandable summary::after {
-  content: "+";
-  float: right;
-  margin-left: 1rem;
-  color: #6f6f6f;
-  font-size: 1.05rem;
-  line-height: 1;
-  transition: color 0.18s ease, transform 0.18s ease;
+  content: "Read";
+  position: absolute;
+  top: 1.25rem;
+  right: 1.35rem;
+  min-width: 3.6rem;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid #303030;
+  border-radius: 0.45rem;
+  color: #767676;
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.018);
+  transition: color 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
 }
 
 .blog-entry-expandable[open] summary::after {
+  content: "Close";
   color: #c8c8c8;
-  transform: rotate(45deg);
+  border-color: #4a4a4a;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .blog-entry-expandable summary:hover::after {
   color: #f0f0f0;
+  border-color: #5a5a5a;
 }
 
 .blog-entry-expandable summary p {
-  max-width: 720px;
+  max-width: 760px;
+}
+
+.blog-entry-expandable summary p + p {
+  margin-top: 0.75rem;
 }
 
 .blog-entry-content {
@@ -1253,7 +1269,14 @@ footer a:hover {
   }
 
   .blog-entry-expandable summary {
-    padding: 1.1rem 1rem;
+    padding: 1.1rem 1rem 3.2rem;
+  }
+
+  .blog-entry-expandable summary::after {
+    top: auto;
+    right: auto;
+    bottom: 1rem;
+    left: 1rem;
   }
 
   .blog-entry-content {
