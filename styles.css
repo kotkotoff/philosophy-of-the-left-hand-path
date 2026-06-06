@@ -27,8 +27,9 @@ body {
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.25rem;
   margin-bottom: 3rem;
   padding: 0.75rem;
@@ -50,7 +51,7 @@ body {
 }
 
 .nav-identity {
-  flex: 1 1 auto;
+  flex: 1 1 14rem;
   display: flex;
   align-items: center;
   min-width: 0;
@@ -114,11 +115,12 @@ body {
 }
 
 .nav-links {
-  flex: 0 0 auto;
+  flex: 1 1 34rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.4rem;
+  min-width: 0;
 }
 
 .nav-links a {
@@ -592,7 +594,7 @@ body.js-enabled.book-page .book-single.reveal {
 
 .home-tabs {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 0.65rem;
   min-height: 6.8rem;
   margin-top: 1.6rem;
@@ -626,6 +628,7 @@ body.js-enabled.book-page .book-single.reveal {
 .more-books-card,
 .articles-card,
 .essays-card,
+.blog-card,
 .back-card {
   justify-content: center;
 }
@@ -960,6 +963,151 @@ footer a:hover {
   margin-top: -1rem;
 }
 
+/* ---- BLOG ---- */
+
+.blog-page header {
+  margin-bottom: 1.8rem;
+}
+
+.blog-list {
+  display: grid;
+  gap: 1rem;
+  max-width: 860px;
+}
+
+.blog-page .back-card {
+  max-width: 860px;
+}
+
+.blog-entry {
+  padding: 1.25rem 1.35rem;
+  border: 1px solid #242424;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.014);
+  transition: background-color 0.20s ease, border-color 0.20s ease, transform 0.20s ease, box-shadow 0.20s ease;
+}
+
+.blog-entry:hover {
+  background: rgba(255, 255, 255, 0.032);
+  border-color: rgba(255, 255, 255, 0.095);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.20);
+  transform: translateY(-1px);
+}
+
+.blog-entry time {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #5f5f5f;
+}
+
+.blog-entry h2 {
+  margin: 0 0 0.65rem;
+  color: #e0e0e0;
+  font-size: 1.12rem;
+  font-weight: normal;
+  line-height: 1.28;
+}
+
+.blog-entry p {
+  color: #929292;
+  font-size: 0.92rem;
+  line-height: 1.72;
+}
+
+.blog-entry-expandable {
+  padding: 0;
+  overflow: hidden;
+}
+
+.blog-entry-expandable summary {
+  display: block;
+  padding: 1.25rem 1.35rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.blog-entry-expandable summary::-webkit-details-marker {
+  display: none;
+}
+
+.blog-entry-expandable summary::after {
+  content: "+";
+  float: right;
+  margin-left: 1rem;
+  color: #6f6f6f;
+  font-size: 1.05rem;
+  line-height: 1;
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.blog-entry-expandable[open] summary::after {
+  color: #c8c8c8;
+  transform: rotate(45deg);
+}
+
+.blog-entry-expandable summary:hover::after {
+  color: #f0f0f0;
+}
+
+.blog-entry-expandable summary p {
+  max-width: 720px;
+}
+
+.blog-entry-content {
+  padding: 0 1.35rem 1.35rem;
+  border-top: 1px solid #1f1f1f;
+}
+
+.blog-entry-content p {
+  margin-top: 1rem;
+}
+
+.blog-entry-content h3 {
+  margin: 1.65rem 0 0.45rem;
+  color: #d8d8d8;
+  font-size: 0.98rem;
+  font-weight: normal;
+  line-height: 1.35;
+}
+
+.blog-entry-content ol {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1.1rem 0 0;
+  padding-left: 1.35rem;
+  color: #929292;
+  font-size: 0.92rem;
+  line-height: 1.72;
+}
+
+.blog-entry-content li {
+  padding-left: 0.25rem;
+}
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.blog-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.6rem;
+  padding: 0 0.55rem;
+  border: 1px solid #2b2b2b;
+  border-radius: 0.45rem;
+  color: #747474;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.018);
+}
+
 /* ---- RESPONSIVE ---- */
 
 @media (max-width: 760px) {
@@ -1094,6 +1242,22 @@ footer a:hover {
 
   .related-list {
     grid-template-columns: 1fr;
+  }
+
+  .blog-entry {
+    padding: 1.1rem 1rem;
+  }
+
+  .blog-entry-expandable {
+    padding: 0;
+  }
+
+  .blog-entry-expandable summary {
+    padding: 1.1rem 1rem;
+  }
+
+  .blog-entry-content {
+    padding: 0 1rem 1.1rem;
   }
 }
 
