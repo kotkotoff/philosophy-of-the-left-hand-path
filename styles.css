@@ -680,6 +680,14 @@ a.expand-card {
   transition: color 0.18s ease;
 }
 
+.home-tabs .related-card .more-label,
+.home-tabs .download-all-card .more-label {
+  font-size: 0.52rem;
+  letter-spacing: 0.08em;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
 .home-card:hover .more-label {
   color: #ffffff;
 }
