@@ -389,10 +389,17 @@ body.js-enabled .reveal.visible {
 }
 
 .book-isbn {
-  margin: -0.55rem 0 1.25rem;
-  color: #6f6f6f;
-  font-size: 0.75rem;
-  line-height: 1.6;
+  display: inline-block;
+  max-width: 100%;
+  margin: -0.45rem 0 1.35rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #777;
+  font-size: 0.68rem;
+  line-height: 1.65;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
 }
 
 .book-single {
