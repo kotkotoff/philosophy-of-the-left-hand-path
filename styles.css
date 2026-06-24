@@ -1197,6 +1197,14 @@ footer a:hover {
     padding: 3.5rem 0;
   }
 
+  .home-page .book-body {
+    padding-inline: 0.35rem;
+  }
+
+  .home-page .book-links {
+    padding-inline: 0.1rem;
+  }
+
   .book-page .book {
     grid-template-columns: 1fr;
     padding: 1.5rem 0;
