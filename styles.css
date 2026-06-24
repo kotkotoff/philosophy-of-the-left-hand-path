@@ -388,6 +388,13 @@ body.js-enabled .reveal.visible {
   border-color: #4a4a4a;
 }
 
+.book-isbn {
+  margin: -0.55rem 0 1.25rem;
+  color: #6f6f6f;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
 .book-single {
   content-visibility: visible;
 }
