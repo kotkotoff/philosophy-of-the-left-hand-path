@@ -462,8 +462,16 @@ body.js-enabled.book-page .book-single.reveal {
   grid-column: 3;
 }
 
+.book-nav-last .book-nav-link:first-child:nth-last-child(2) {
+  grid-column: 1;
+}
+
 .book-nav-link:first-child {
   text-align: right;
+}
+
+.book-nav-last .book-nav-link:first-child {
+  text-align: left;
 }
 
 .book-nav-link:hover {
