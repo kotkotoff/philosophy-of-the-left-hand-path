@@ -1329,6 +1329,3 @@ footer a:hover {
     transition: none !important;
   }
 }
-[hidden] {
-  display: none !important;
-}
