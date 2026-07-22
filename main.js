@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var siteFooter = document.querySelector('[data-site-footer]');
   var reveals = document.querySelectorAll('.reveal');
-  var extraLinks = document.querySelectorAll('.extra-links');
+  var extraLinks = document.querySelectorAll('.extra-links:not(.click-only)');
 
   if (siteFooter) {
     siteFooter.innerHTML = '<p>&copy; 2026 Denys Spirin</p><p>Contact: <a href="mailto:denys.spirin@gmail.com">denys.spirin@gmail.com</a></p>';
