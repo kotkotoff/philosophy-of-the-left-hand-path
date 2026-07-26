@@ -308,10 +308,18 @@ header:hover .series-subtitle {
 }
 
 .cover-buttons {
-  display: flex;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem;
+  width: 100%;
+  max-width: 160px;
   margin-top: 0.85rem;
-  justify-content: center;
+}
+
+.cover-buttons .btn-outline {
+  min-width: 0;
+  padding-inline: 0.3rem;
+  letter-spacing: 0.06em;
 }
 
 .btn-outline {
@@ -722,7 +730,7 @@ a.expand-card {
 .download-all-card:hover,
 .download-all-card:focus,
 .download-all-card:focus-within {
-  height: 7.5rem;
+  height: 9rem;
 }
 
 .archive-links {
@@ -754,7 +762,7 @@ a.expand-card {
 .expand-card:hover .expand-content,
 .expand-card:focus .expand-content,
 .expand-card:focus-within .expand-content {
-  max-height: 6rem;
+  max-height: 8rem;
   margin-top: 1rem;
   opacity: 1;
   overflow: visible;
