@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/</loc>
+    <loc>{{SITE_ORIGIN}}/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/other-books.html</loc>
+    <loc>{{SITE_ORIGIN}}/other-books</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/articles.html</loc>
+    <loc>{{SITE_ORIGIN}}/articles</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/essays.html</loc>
+    <loc>{{SITE_ORIGIN}}/essays</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/related-links.html</loc>
+    <loc>{{SITE_ORIGIN}}/related-links</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/against-the-light.html</loc>
+    <loc>{{SITE_ORIGIN}}/against-the-light</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/the-black-flame.html</loc>
+    <loc>{{SITE_ORIGIN}}/the-black-flame</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/ethics-of-the-abyss.html</loc>
+    <loc>{{SITE_ORIGIN}}/ethics-of-the-abyss</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/the-vanishing-point.html</loc>
+    <loc>{{SITE_ORIGIN}}/the-vanishing-point</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/the-philosophy-of-the-dark-name.html</loc>
+    <loc>{{SITE_ORIGIN}}/the-philosophy-of-the-dark-name</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/the-natureless-act.html</loc>
+    <loc>{{SITE_ORIGIN}}/the-natureless-act</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/the-philosophy-of-the-sitra-achra.html</loc>
+    <loc>{{SITE_ORIGIN}}/the-philosophy-of-the-sitra-achra</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/the-dying-god.html</loc>
+    <loc>{{SITE_ORIGIN}}/the-dying-god</loc>
     <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/treatise-on-ontology.html</loc>
+    <loc>{{SITE_ORIGIN}}/treatise-on-ontology</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/ontology-of-differentiation.html</loc>
+    <loc>{{SITE_ORIGIN}}/ontology-of-differentiation</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/not-one.html</loc>
+    <loc>{{SITE_ORIGIN}}/not-one</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://philosophy-of-the-left-hand-path.org/terms.html</loc>
+    <loc>{{SITE_ORIGIN}}/terms</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

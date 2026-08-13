@@ -1,0 +1,11 @@
+.git/
+.claude/
+.vscode/
+.wrangler/
+dist/
+scripts/
+src/
+.assetsignore
+.gitignore
+site.config.*
+wrangler.jsonc
