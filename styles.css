@@ -992,6 +992,11 @@ footer a:hover {
   aspect-ratio: 200 / 286;
 }
 
+.article-cover img.journal-logo {
+  object-fit: contain;
+  background: #fff;
+}
+
 .article-entry .book-abstract + .book-abstract {
   margin-top: -1rem;
 }
