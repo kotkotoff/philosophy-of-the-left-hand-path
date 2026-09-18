@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var reveals = document.querySelectorAll('.reveal');
 
   if (siteFooter) {
-    siteFooter.innerHTML = '<p>&copy; 2026 Denys Spirin</p><p>Contact: <a href="mailto:denys.spirin@gmail.com">denys.spirin@gmail.com</a></p>';
+    siteFooter.innerHTML = '<p>&copy; 2026 Denys Spirin</p><p>Contact: <a href="mailto:denys.spirin@gmail.com">denys.spirin@gmail.com</a></p>' +
+      '<p class="backup-address">Backup address: <a href="https://philosophy-of-the-left-hand-path.denys-spirin.workers.dev/">philosophy-of-the-left-hand-path.denys-spirin.workers.dev</a><br>Bookmark this address in case the main domain becomes unavailable.</p>';
 
     var analyticsScript = document.createElement('script');
     analyticsScript.defer = true;

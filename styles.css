@@ -824,6 +824,16 @@ footer a:hover {
   color: #b0b0b0;
 }
 
+.backup-address {
+  margin-top: 1.25rem;
+  color: #909090;
+  overflow-wrap: anywhere;
+}
+
+.backup-address a {
+  color: #a0a0a0;
+}
+
 /* ---- TERMS ---- */
 
 .terms-page h2 {
